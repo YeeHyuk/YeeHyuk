@@ -1,0 +1,104 @@
+import java.util.Scanner;
+
+public class BlackJack{
+
+public static void main(String[] args){ 
+  
+Scanner R = new Scanner(System.in);
+
+System.out.println("What is your name?");
+
+String name = R.nextLine();
+
+int humanMoney = 10;
+int computerMoney = 10;
+
+while ( humanMoney > 0 && computerMoney > 0) {
+  
+  Scanner e= new Scanner(System.in);
+  
+  System.out.println(name+ " has $"+ humanMoney);
+  
+  System.out.println(name+ " has $"+ computerMoney);
+  
+  System.out.println(name+ " How much will you bet?");
+  
+  int betMoney = e.nextInt();
+  
+
+
+
+
+Scanner in = new Scanner(System.in);
+
+  
+int human_card1 = (int)(Math.random()*11)+1;
+
+int human_card2 = (int)(Math.random()*11)+1;
+
+int human_total = human_card1 + human_card2;
+
+System.out.println("Human player got");
+
+System.out.println(human_card1+" and "+human_card2);
+
+  
+for(int i=0; i<3; i=i+1){
+
+System.out.println("Do you want another card (Y/N)");
+
+String s = in.nextLine();
+
+if(s.equals("N")){
+
+break;
+
+}
+
+
+
+if(s.equals("Y")){
+
+human_total = human_total + (int)(Math.random()*11)+1;
+
+System.out.println("new human_total "+ human_total);
+
+  
+
+}
+
+}
+
+  
+
+int computer_card1 = (int)(Math.random()*11)+1;
+
+int computer_card2 = (int)(Math.random()*11)+1;
+
+int computer_total = computer_card1 + computer_card2;
+
+System.out.println("Computer player got");
+
+System.out.println(computer_card1+" and "+computer_card2);
+
+  
+
+if(human_total<=21 && computer_total<human_total){
+
+System.out.println("Human Wins");
+
+}
+
+else {
+
+System.out.println("Computer Wins");
+
+    }
+
+  
+
+  }
+
+ }
+
+}

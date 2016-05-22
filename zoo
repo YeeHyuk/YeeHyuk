@@ -1,0 +1,24 @@
+Enter file contents here
+
+In Main.java
+public static void main(String[] args){
+
+  Scanner R = new Scanner(System.in); 
+ 
+  System.out.println("어떤동물을 원하십니까?"); 
+ 
+  String name = R.nextLine(); 
+
+  if cat :
+    print 야옹
+  else if dog :
+    print 멍멍
+  else if horse :
+    print 히이잉
+  else if pig :
+    print 꿀꿀
+  else if bird :
+    print 짹짹
+    
+    // I don't know well how to code this program 
+}

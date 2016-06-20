@@ -1,0 +1,43 @@
+import java.util.Scanner;
+
+public class MasterMonk {
+  String name2;
+  int money = 100;
+  int zen = 0;
+
+ 
+public static void main(String[] args){ 
+Scanner R = new Scanner(System.in);  
+ 
+System.out.println("What is your name?"); 
+ 
+String name = R.nextLine(); 
+
+Player blabla = new Player(name);
+System.out.println(blabla.name); 
+System.out.println(blabla.money);
+System.out.println(blabla.zen);
+
+
+if blabla.Meditate(blabla):
+  System.out.println(blabla.zen);
+
+else if blabla.HelpSomeone(blabla);
+  System.out.println(blabla.money);
+  System.out.println(blabla.zen);
+  
+else if blabla.WorkatCompany(blabla);
+  System.out.println(blabla.money);
+  System.out.println(blabla.zen);
+
+else if blabla.PurchaseTemple(blabla);
+  System.out.println(blabla.money);
+  System.out.println(blabla.zen);
+  
+else if blabla.WorkatTemple(blabla);
+  System.out.println(blabla.money);
+  System.out.println(blabla.zen);
+}
+
+}
+                            

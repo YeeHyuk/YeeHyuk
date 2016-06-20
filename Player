@@ -1,0 +1,29 @@
+public class Player {
+  int money = 100;
+  int zen;
+  String name;
+  public Player (String name){
+    this.name = name;
+  }
+  
+  public void Meditate(Player player){
+    player.zen += 1;}
+  
+  public void HelpSomeone(Player player){
+    player.zen += 5;
+    player.money -= 10;}
+  
+  public void WorkatCompany(Player player){
+    player.zen -= 30;
+    player.money += 50;}
+  
+  public void PurchaseTemple(Player player){
+    player.zen += 40;
+    player.money -= 70;
+  }
+  
+  public void WorkatTemple(Player player){
+    player.zen += 5;
+    player.money -= 5;
+  }
+}
